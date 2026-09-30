@@ -1,0 +1,33 @@
+room = 0
+print("WELCOME TO THE HOTEL")
+print("BOOK YOUR ROOM")
+
+while True:
+  print("\n1. View Rooms")
+  print("2. Book Rooms")
+  print("3. Cancel Booking")
+  print("4. View Bookings")
+  print("5. Exit")
+  choice = input("Enter your choice: ")
+
+  if choice == "1":
+    print("Available Rooms: ")
+    for i in range(1, 6):
+      print(f"Room {i}")
+  elif choice == "2":
+    print("Which room you want to book")
+    for i in range(1, 6):
+      print(f"Room {i}")
+    room = int(input("Enter room number: "))
+    room += 1
+    print(f"Room {room} booked successfully")
+  elif choice == "3":
+    room -= 1
+    print("Room cancelled successfully")
+  elif choice == "4":
+    print(f"You have booked {room} rooms")
+  elif choice == "5":
+    print("Thank you for using the HOTEL!")
+    break
+  else:
+    print("Invalid choice")
