@@ -51,7 +51,7 @@ def bill():
     print(f"TOTAL AMOUNT: {total_bill}")
 
 while True :
-    print("-----RESTAURANT MANAGEMENT SYSTEM-----")
+    print("------RESTAURANT MANAGEMENT SYSTEM------")
     print("1. ADD MENU")
     print("2. VIEW MENU")
     print("3. ORDER MENU")
